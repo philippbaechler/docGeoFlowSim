@@ -1,71 +1,26 @@
 ---
-
 layout: default
-title: "Physikalisch basierte Flutsimulation mit Python"
-description: "Ein Blogpost zur Modellierung von Wasserverteilung mit DEM-Daten und Fließgeschwindigkeit"
---------------------------------------------------------------------------------------------------------
+title: Physikalisch basierte Flutsimulation
+---
 
-# 🌊 Physikalisch basierte Flutsimulation mit Python
+# Physikalisch basierte Flutsimulation
 
-**Autor:** Dein Name
-**Datum:** 2025-06-21
+Willkommen auf meiner Projektseite!  
+Hier dokumentiere ich meine Experimente mit einer selbstgebauten Flutsimulation auf Basis eines digitalen Höhenmodells (DEM).
 
-## 🔍 Motivation
+## Projektidee
 
-In diesem Projekt untersuche ich, wie sich Wasser über ein digitales Höhenmodell (DEM) verteilt, wenn es an einem bestimmten Punkt eingeleitet wird. Ziel ist es, eine realitätsnahe, zeitschrittbasierte Flutsimulation zu entwickeln, bei der auch die Fließgeschwindigkeit des Wassers (basierend auf dem Gefälle und der Wassertiefe) berücksichtigt wird.
+- Simulation von Wasserabfluss
+- Verteilung basierend auf DEM
+- Einbindung von Hangneigung & Fließgeschwindigkeit
 
-## 🧬 Simulationsidee
+## Beispielplot
 
-Die Simulation basiert auf folgenden physikalischen Konzepten:
+![Simulationsergebnis](assets/flood_example.png)
 
-* **Wasserhöhe:** Die Verteilung des Wassers basiert auf der Differenz des *Gesamthöhenpotenzials* zwischen benachbarten Zellen.
-* **Fließgeschwindigkeit:** Die Geschwindigkeit des Wassers wird mit der **Gauckler-Manning-Formel** berechnet:
+## Quellcode
 
-```math
-v = \\frac{1}{n} \\cdot h^{2/3} \\cdot \\sqrt{S}
-```
+Den vollständigen Python-Code findest du auf [GitHub](https://github.com/dein-benutzername/dein-repo).
 
-## 💪 Setup
-
-### 📆 Benötigte Pakete
-
-```bash
-pip install numpy scipy matplotlib pillow
-```
-
-### 📁 Dateistruktur
-
-* `DEM_data/mini.tif`: dein digitales Höhenmodell (Graustufenbild)
-* `flood_simulation.py`: das Hauptskript
-
-## 🔮 Simulationscode
-
-Den gesamten Simulationscode findest du [hier im Repository](https://github.com/deinname/flood-simulation).
-
-## 📊 Beispielresultate
-
-Hier einige Beispielbilder, die den Flussverlauf alle 10 Schritte zeigen:
-
-## ⏲ Zeitschrittberechnung (optional)
-
-Die reale Dauer eines Zeitschritts ergibt sich näherungsweise durch:
-
-```math
-\\Delta t = \\frac{\\text{Zellgröße}}{\\max(\\text{Wassergeschwindigkeit})}
-```
-
-Momentan wird pro Iteration ein fixer Zeitschritt angenommen.
-
-## ⚖️ Nächste Schritte
-
-* Implementierung von **Regenereignissen** oder **Dauerregen**
-* Anbindung an **radarbasierte Niederschlagsdaten**
-* Echtzeit-Simulation mit PyGame oder WebGL
-
-## 📅 GitHub-Repository
-
-👉 [github.com/deinname/flood-simulation](https://github.com/deinname/flood-simulation)
-
-## 💪 Fazit
-
-Diese Simulation zeigt, wie mit einfachen physikalischen Prinzipien und Python-Bibliotheken eine realitätsnahe Wasserverteilung über Gelände modelliert werden kann.
+---
+Erstellt mit ❤️ und GitHub Pages.
