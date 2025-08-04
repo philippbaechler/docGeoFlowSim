@@ -1,6 +1,9 @@
 ---
 
-## layout: default title: "Physikalisch basierte Flutsimulation mit Python" description: "Ein Blogpost zur Modellierung von Wasserverteilung mit DEM-Daten und Fließgeschwindigkeit"
+layout: default
+title: "Physikalisch basierte Flutsimulation mit Python"
+description: "Ein Blogpost zur Modellierung von Wasserverteilung mit DEM-Daten und Fließgeschwindigkeit"
+--------------------------------------------------------------------------------------------------------
 
 # 🌊 Physikalisch basierte Flutsimulation mit Python
 
@@ -19,7 +22,7 @@ Die Simulation basiert auf folgenden physikalischen Konzepten:
 * **Fließgeschwindigkeit:** Die Geschwindigkeit des Wassers wird mit der **Gauckler-Manning-Formel** berechnet:
 
 ```math
-v = \frac{1}{n} \cdot h^{2/3} \cdot \sqrt{S}
+v = \\frac{1}{n} \\cdot h^{2/3} \\cdot \\sqrt{S}
 ```
 
 ## 💪 Setup
@@ -43,14 +46,12 @@ Den gesamten Simulationscode findest du [hier im Repository](https://github.com/
 
 Hier einige Beispielbilder, die den Flussverlauf alle 10 Schritte zeigen:
 
-&#x20; &#x20;
-
 ## ⏲ Zeitschrittberechnung (optional)
 
 Die reale Dauer eines Zeitschritts ergibt sich näherungsweise durch:
 
 ```math
-\Delta t = \frac{\text{Zellgröße}}{\max(\text{Wassergeschwindigkeit})}
+\\Delta t = \\frac{\\text{Zellgröße}}{\\max(\\text{Wassergeschwindigkeit})}
 ```
 
 Momentan wird pro Iteration ein fixer Zeitschritt angenommen.
