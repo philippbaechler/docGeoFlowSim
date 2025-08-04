@@ -16,7 +16,7 @@ Hier dokumentiere ich meine Experimente mit einer selbstgebauten Flutsimulation 
 
 ## Beispielplot
 
-![Simulationsergebnis](assets/flood_example.png)
+<img src="https://drive.google.com/uc?export=view&id=1PtSKMzJWDPM_wp6dnS5OaW2ym7cpQw-_" alt="Simulationsergebnis" width="600">
 
 ## Quellcode
 
