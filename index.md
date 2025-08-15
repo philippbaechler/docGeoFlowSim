@@ -5,26 +5,27 @@ title: Physikalisch basierte Flutsimulation
 
 # Physikalisch basierte Flutsimulation
 
-Willkommen auf meiner Projektseite!  
-Hier dokumentiere ich meine Experimente mit einer selbstgebauten Flutsimulation auf Basis eines digitalen Höhenmodells (DEM).
+Dieses Projekt simuliert die Ausbreitung von Wasser über ein digitales Höhenmodell (DEM). Dabei wird der Wasserstand für jeden Zeitschritt neu berechnet.
 
-## Projektidee
+## Formel zur Geschwindigkeit
 
-- Simulation von Wasserabfluss
-- Verteilung basierend auf DEM
-- Einbindung von Hangneigung & Fließgeschwindigkeit
+Die Fließgeschwindigkeit \(v\) ergibt sich nach der vereinfachten Manning-Gleichung zu:
+
+\\[
+v = \\frac{1}{n} h^{2/3} \\sqrt{S}
+\\]
+
+wobei:
+
+- \(v\): Fließgeschwindigkeit [m/s]  
+- \(n\): Rauigkeitsbeiwert (z. B. 0.03 für Beton)  
+- \(h\): Wassertiefe [m]  
+- \(S\): Hangneigung [-]  
 
 ## Beispielplot
 
-<img src="https://drive.google.com/uc?export=download&id=1PtSKMzJWDPM_wp6dnS5OaW2ym7cpQw-_" alt="Simulationsergebnis" width="600">
+<img src="https://drive.google.com/uc?export=view&id=1PtSKMzJWDPM_wp6dnS5OaW2ym7cpQw-_" alt="Simulationsergebnis" width="600">
 
-## Beispielformel
+## Fazit
 
-Die Formel lautet: \( v = \frac{1}{n} h^{2/3} \sqrt{S} \)
-
-## Quellcode
-
-Den vollständigen Python-Code findest du auf [GitHub](https://github.com/dein-benutzername/dein-repo).
-
----
-Erstellt mit ❤️ und GitHub Pages.
+Die Simulation erreicht eine stabile Verteilung des Wassers nach mehreren Schritten. Weitere Optimierungen wie eine zeitabhängige Flussberechnung oder Einbezug von Infiltration sind möglich.

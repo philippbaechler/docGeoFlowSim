@@ -2,12 +2,12 @@
 
 body {
   font-family: 'Latin Modern Roman', 'Times New Roman', serif;
-  font-size: 16px;
-  line-height: 1.6;
-  max-width: 700px;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 720px;
   margin: 3rem auto;
   padding: 0 1rem;
-  background: #fdfdfd;
+  background: #fffdfa;
   color: #111;
 }
 
@@ -19,8 +19,8 @@ h1, h2, h3 {
 
 code, pre {
   background: #f4f4f4;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
+  padding: 0.3em 0.5em;
+  border-radius: 4px;
   font-family: monospace;
 }
 
