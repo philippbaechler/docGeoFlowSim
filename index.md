@@ -24,7 +24,7 @@ wobei:
 
 ## Beispielplot
 
-<img src="https://drive.google.com/uc?export=view&id=1PtSKMzJWDPM_wp6dnS5OaW2ym7cpQw-_" alt="Simulationsergebnis" width="600">
+<img src="assets/result_iteration_70.png" alt="Simulationsergebnis" width="600">
 
 ## Fazit
 
